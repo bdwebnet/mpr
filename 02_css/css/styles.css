@@ -1,0 +1,63 @@
+/* Variablen */
+
+:root {
+  --primary: #0083ee;
+  --secondary: rgb(102, 165, 213);
+}
+
+/* Schrift-Style */
+
+body {
+  font-family: sans-serif;
+}
+
+/* Bild-Style */
+
+picture img {
+  max-width: 40vw;
+}
+
+/* Tabellengestaltung */
+
+table {
+  border-collapse: collapse;
+  width: 60%;
+}
+th, td {
+  /* ausführlich */
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--primary);
+
+  /* Kurzschreibweise
+  border: 1px solid var(--primary); */
+
+  padding: 5px;
+}
+
+/* Jedes gerade Kind-Element (2n) */
+/*tr:nth-child(odd) {
+  background-color: var(--primary);
+}*/
+
+/* Jedes ungerade Kind-Element (2n+1) */
+tr:nth-child(even) {
+  background-color: var(--secondary);
+}
+
+
+.big-table tr:nth-child(4n+1) {
+  background-color: #0080ff;
+}
+
+.big-table tr:nth-child(4n+2) {
+  background-color: #4ea3f6;
+}
+
+.big-table tr:nth-child(4n+3) {
+  background-color: #81bcf6;
+}
+
+.big-table tr:nth-child(4n+4) {
+  background-color: #bddbf8;
+}
