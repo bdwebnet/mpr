@@ -58,6 +58,6 @@ tr:nth-child(even) {
   background-color: #81bcf6;
 }
 
-.big-table tr:nth-child(4n+4) {
+.big-table tr:nth-child(4n) {
   background-color: #bddbf8;
 }
