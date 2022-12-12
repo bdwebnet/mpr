@@ -1,0 +1,30 @@
+section {
+  margin-bottom: 10px;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  margin-right: 10px;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+section {
+  clear: both;
+}
+
+.box {
+  float: left;
+  width: 350px;
+  border: 1px mediumvioletred solid;
+  margin-right: 10px;
+  padding: 10px;
+  background-color: grey;
+}
