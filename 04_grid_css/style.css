@@ -1,0 +1,43 @@
+body {
+  margin: 40px;
+}
+
+.wrapper {
+  display: grid;
+
+  /* Erstellt ein grid-layout mit drei Spalten, die sich den Platz im Verhältnis 1 zu 3 zu 1 aufteilen */
+  grid-template-columns: 1fr 3fr 1fr;
+
+  grid-gap: 10px;
+  background-color: #fff;
+  color: #444;
+}
+
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+.a {
+  /* Element/ Container startet horizontal an Position 2,
+  endet horizontal an Position 3, in vertikaler Richtung Start an Position 1, Ende an Position 2*/
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.b {
+  /* Kurzschreibweise für Start 2 und Ende 3 */
+  grid-column: 2 / 3;
+
+  grid-row: 2 /3;
+}
+
+.c {
+  /* Kurschreibweise für row-start column-start row-end column-end */
+  grid-area: 2 / 3 / 3 /4;
+}

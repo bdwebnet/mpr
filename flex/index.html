@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox</title>
+
+  <style>
+    nav, main, aside {
+      box-sizing: border-box;
+    }
+
+    #wrapper {
+      display: flex;
+    }
+    header, footer, .item {
+      background-color: #dbdbdb;
+      border: 2px solid white;
+      padding: 1em;
+      flex-grow: 1;
+    }
+
+    nav {
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-basis: 25%;
+      order: 3;
+    }
+
+    main {
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-basis: 50%;
+    }
+
+    aside {
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-basis: 25%;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  Hier stehen die Head Infos
+</header>
+
+<div id="wrapper">
+  <nav class="item">Hier steht die Navigation</nav>
+  <main class="item">Hier steht der Hauptinhalt</main>
+  <aside class="item">Hier stehen weniger wichtige Info</aside>
+</div>
+
+<footer>
+  Hier stehen die End-Infos.
+</footer>
+
+</body>
+</html>

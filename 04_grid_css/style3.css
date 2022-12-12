@@ -1,0 +1,47 @@
+body {
+  margin: 40px;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas:
+          "nav header header"
+          "nav gallery gallery"
+          "nav main main"
+          "footer footer footer";
+}
+
+.gallery {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.box {
+  background-color: #444444;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+nav {
+  grid-area: nav;
+}
+
+header {
+  grid-area: header;
+}
+
+.gallery {
+  grid-area: gallery;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}

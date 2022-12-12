@@ -1,0 +1,75 @@
+.wrapper {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas:
+          "navi"
+          "kopf"
+          "teaser1"
+          "teaser2"
+          "teaser3"
+          "haupt"
+          "fuss";
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    grid-template-areas:
+          "kopf kopf kopf"
+          "navi navi navi"
+          "teaser1 teaser2 teaser3"
+          "haupt haupt haupt"
+          "fuss fuss fuss";
+  }
+}
+
+@media (min-width: 1024px) {
+  .wrapper {
+    grid-template-areas:
+          "navi kopf kopf kopf"
+          "navi teaser1 teaser2 teaser3"
+          "navi haupt haupt haupt"
+          "fuss fuss fuss fuss";
+  }
+}
+
+nav,
+header,
+.teaser1,
+.teaser2,
+.teaser3,
+main,
+footer {
+  background-color: #444444;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+nav {
+  grid-area: navi;
+}
+
+header {
+  grid-area: kopf;
+}
+
+.teaser1 {
+  grid-area: teaser1;
+}
+
+.teaser2 {
+  grid-area: teaser2;
+}
+
+.teaser3 {
+  grid-area: teaser3;
+}
+
+main {
+  grid-area: haupt;
+}
+
+footer {
+  grid-area: fuss;
+}

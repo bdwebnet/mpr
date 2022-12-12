@@ -61,3 +61,31 @@ tr:nth-child(even) {
 .big-table tr:nth-child(4n) {
   background-color: #bddbf8;
 }
+
+
+
+
+
+
+p {
+  text-indent: 40px;
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+}
+
+h1 + p, h2 + p {
+  text-indent: 0;
+}
+
+body a[href^="http"]::before {
+  content: "\2197\00A0";
+}
+
+body {
+  background-image: url("../img/cat-gc5e747087_1280.jpg");
+  background-attachment: fixed;
+}
+
+body a[href$=".pdf"] {
+
+}
